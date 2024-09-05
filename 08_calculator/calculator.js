@@ -15,12 +15,16 @@ const multiply = (array) => {
   return array.reduce((product, current) => product * current);
 };
 
-const power = function() {
-	
+const power = function(number1, number2) {
+	return Math.pow(number1,number2);
 };
 
-const factorial = function() {
-	
+const factorial = function(n) {
+  if (n === 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
 };
 
 // Do not edit below this line
